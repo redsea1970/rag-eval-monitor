@@ -66,3 +66,10 @@ flowchart TD
     T4 --> DF[monitor/drift.py]
     D[data/golden_set.json] --> T1
 ```
+
+## Ограничения
+
+- Демо-режим: нет реальной LLM, только TF-IDF-судья и эвристики.
+- Метрики упрощённые: `faithfulness`, `answer_relevancy` — по пересечению токенов, а не LLM-судья.
+- Мониторинг пишет в JSONL локально, без БД и алертов.
+- Для production нужно: подключить LLM-судью, RAGAS, Prometheus/Grafana, алерты на дрейф.
