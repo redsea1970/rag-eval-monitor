@@ -73,3 +73,7 @@ flowchart TD
 - Метрики упрощённые: `faithfulness`, `answer_relevancy` — по пересечению токенов, а не LLM-судья.
 - Мониторинг пишет в JSONL локально, без БД и алертов.
 - Для production нужно: подключить LLM-судью, RAGAS, Prometheus/Grafana, алерты на дрейф.
+
+## Архитектура
+
+Подробная схема проекта: [ARCHITECTURE.md](ARCHITECTURE.md)
